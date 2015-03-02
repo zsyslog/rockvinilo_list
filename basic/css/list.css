@@ -1,0 +1,60 @@
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	background-color: #f8f8f8;
+}
+
+.navbar-brand a img {
+	height: 110px;
+}
+
+.navbar-default {
+	height: 130px;
+	background-color: white
+}
+
+.product {
+	max-width: 175px;
+	margin: 5px;
+	height: 365px;
+	border: 1px solid #ccc;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.product > span { 
+	display:block;
+	width: 100%;
+}
+
+.product > img {
+	min-width: 163px;
+	height: 163px;
+}
+
+.product > .price {
+	margin-top: 10px;
+}
+
+.title {
+	height: 55px;
+	font-weight: bold;
+	padding: 3px 5px;
+	color: orange;
+}
+
+.artist {
+	height: 46px;
+	color: #666;
+	font-weight: bold;
+	padding: 3px 5px;
+}
+
+.grading {
+	font-weight: bold;
+	font-size: 10px;
+	padding: 3px 5px;
+}
+
+.price {
+	cursor: default;
+}

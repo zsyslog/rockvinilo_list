@@ -1,0 +1,16 @@
+{
+  "name": "rockvinilo-data",
+  "version": "0.0.1",
+  "description": "rocvinilo pseudo api",
+  "main": "rockvinilo.api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zsyslog",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "google-spreadsheet": "~0.2.8",
+    "request": "~2.38.0",
+    "google-spreadsheets": "~0.3.0"
+  }
+}
