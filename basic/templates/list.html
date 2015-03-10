@@ -1,0 +1,18 @@
+
+<div class="container">
+	<input type="text" class="search form-control" placeholder="Buscar" ng-change="filter()" ng-model="keyword">
+	<h2>{{items.length}} Discos Disponibles</h2>
+</div>
+
+<div class="container container-lg-height">
+	<div class="row row-lg-height" id="items">
+
+		<div class="col-xs-8 col-sm-4 col-md-3 col-lg-4 col-lg-height product" ng-repeat="item in items" ng-click="detail(item._id)">
+			<img data-original="{{item._source.imagen}}" class="cover lazy" src="https://dl.dropboxusercontent.com/u/3542/rockvinilo/default_disc.png" style="display: inline;" />
+			<span class="title">{{item._source.album}}</span>
+			<span class="artist">{{item._source.artista}}</span>
+			<button class="btn btn-primary btn-info price">{{item._source.precio}}</button>
+		</div>
+
+	</div>
+</div> 

@@ -42,7 +42,7 @@ body {
 	color: orange;
 }
 
-.artist {
+span.artist {
 	height: 46px;
 	color: #666;
 	font-weight: bold;
@@ -57,4 +57,27 @@ body {
 
 .price {
 	cursor: default;
+}
+
+input.search {
+	width:60%;
+}
+
+.navbar-collapse {
+	text-align: right;
+	background: #FFF;
+}
+
+.detail-data.cover {
+	max-width: 206px;
+}
+.detail-data.album {
+	text-transform: uppercase;
+}
+.detail-data.price {
+	font-weight: bold;
+	font-size: 22px;
+}
+.orange {
+	color: #FFA500;
 }
