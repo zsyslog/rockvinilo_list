@@ -9,12 +9,27 @@
 		</div>
 		<div class="col-sm-4">
 			<h2 class="detail-data artist">{{item._source.artista}}</h2>
-			<p class="detail-data format">Formato: {{item._source.formato}}</p>
-			<p class="detail-data inches">Pulgadas: {{item._source.pulgadas}}</p>
+			<p class="detail-data format"><strong>Formato:</strong> {{item._source.formato}}</p>
+			<p class="detail-data inches"><strong>Tamaño:</strong> {{item._source.pulgadas}}</p>
 			<p class="detail-data extra">{{item._source.observaciones}}</p>
+			<input id="cover-grade">
+			<input id="disc-grade">
 			<p class="detail-data price orange">{{item._source.precio}}</a>
 			<p><a class="btn btn-primary btn-info" href="https://rockvinilo.wufoo.com/forms/contacto-rock-vinilos/" target="_blank">Contactar!</a></p>
+
 		</div>
 	</div>
 	<button class="btn btn-default" ng-click="back()"><i class="fa fa-backward"></i> Volver al listado</button>
+</div>
+
+<hr/>
+
+<div class="container" ng-if="suggestions">
+	<h2>Ver más</h2>
+	<div class="row">
+		<div class="col-xs-8 col-sm-4 col-md-3 col-lg-4 col-lg-height mlt-preview" ng-click="detail(item._id)" ng-repeat="item in mlt" ng-if="item._source.disponibilidad == 'DISPONIBLE'">
+			<img ng-src="{{item._source.imagen}}" class="cover lazy" style="display: inline;" />
+			<span class="title">{{item._source.album}}</span>
+		</div>
+	</div>
 </div>
